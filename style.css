@@ -18,8 +18,10 @@ textarea {
 
 
 body {
-  font-family: roboto;
+  font-family: 'Source Sans Pro', sans-serif;
   background: white;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .material-icons {
@@ -33,32 +35,34 @@ body {
 
 .invoice-header {
   display: flex;
-  padding: 70px 0%;
+  padding: 4em 0;
   width: 100%;
 }
 
 .title {
   font-size: 18px;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   color: rgb(66, 66, 66);
 }
 
 .date {
   padding: 5px 0px;
   font-size: 14px;
-  letter-spacing: 3px;
+  font-family: 'Source Sans Pro', sans-serif;
   color: rgb(156, 156, 156);
 }
 
 .invoice-number {
-  font-size: 17px;
+  font-size: 12px;
   letter-spacing: 2px;
   color: rgb(156, 156, 156);
+
 }
 
 
 .space {
   width: 50%;
+  letter-spacing: 2px;
 }
 
 table {
@@ -80,7 +84,7 @@ th {
   font-size: 13px;
   letter-spacing: 2px;
   color: gray;
-  text-align: left;
+  text-align: center;
 
 }
 
@@ -88,7 +92,7 @@ th {
 td {
   padding: 10px 0px;
   border-bottom: 0.5px solid rgb(226, 226, 226);
-  text-align: left;
+  text-align: center;
 
 
 
@@ -184,8 +188,8 @@ input[type=number] {
 
 #sum input[type=text] {
   width: 100%;
-  font-size: 33px !important;
-  color: black;
+  font-size: 1.5em !important;
+  color: #09095d;
   text-align: right !important;
 
 }
@@ -216,13 +220,18 @@ input[type=number] {
   .title-date {
     width: 20%;
   }
-
+/* 
   .invoice-number {
-    width: 20%;
+    width: 40%;
   }
 
   .space {
-    width: 80%;
-  }
+    width: 60%;
+  } */
+}
 
+@media (max-width: 360px){
+  .invoice-container{
+    width: 100%;
+  }
 }
